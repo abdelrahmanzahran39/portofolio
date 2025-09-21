@@ -31,7 +31,8 @@ body {
 
 .nav-container a,
 .nav-buttons a,
-.nav-container ul li {
+.nav-buttons button,
+.nav-container ul li{
     text-decoration: none;
     list-style: none;
     color: var(--secondaryColor);
@@ -92,7 +93,8 @@ body {
 
 }
 
-.nav-buttons a {
+.nav-buttons a,
+.nav-buttons button {
     border-radius: 25px;
     padding: 8px 20px;
 }
