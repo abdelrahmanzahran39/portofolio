@@ -111,6 +111,7 @@ button{
     transition: all 0.3s ease;
 }
 
+
 .nav-buttons #b1:hover::before {
     inset: -4px;
 }
@@ -315,18 +316,30 @@ span {
     margin-bottom: 0;
     font-size: 11px !important;
 }
+
 @media (min-width:1520px) {
     .Hero{
-        min-height: 800px;
+        min-height: 850px;
+    }
+}
+
+@media (max-width:1520px)  and (min-width:1280px){
+    .Hero{
+        min-height: 750px;
+    }
+}
+@media (max-width:1279px)  and (min-width:1110px){
+    .Hero{
+        min-height: 660px;
     }
 }
 @media (min-width:1111px) {
     .header-content {
-        margin-top: 7%;
+        margin-top: 10%;
     }
 
     .header-content h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .header-content {
