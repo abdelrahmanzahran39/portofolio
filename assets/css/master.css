@@ -32,7 +32,7 @@ body {
 .nav-container a,
 .nav-buttons a,
 .nav-buttons button,
-.nav-container ul li{
+.nav-container ul li {
     text-decoration: none;
     list-style: none;
     color: var(--secondaryColor);
@@ -94,11 +94,13 @@ body {
 }
 
 .nav-buttons a,
-.nav-buttons button {
+.nav-buttons button{
     border-radius: 25px;
     padding: 8px 20px;
 }
-
+.nav-buttons button{
+    border: none;
+}
 .nav-buttons #b1::before {
     content: "";
     position: absolute;
