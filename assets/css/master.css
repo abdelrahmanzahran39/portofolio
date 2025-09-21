@@ -322,7 +322,14 @@ span {
         min-height: 850px;
     }
 }
-
+@media (min-width:1400px){
+    .header-content h1 {
+        font-size: 45px;
+    }
+    .header-content p {
+        font-size: 20px;
+    }
+}
 @media (max-width:1520px)  and (min-width:1280px){
     .Hero{
         min-height: 750px;
