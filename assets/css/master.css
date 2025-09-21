@@ -98,7 +98,7 @@ body {
     border-radius: 25px;
     padding: 8px 20px;
 }
-.nav-buttons button{
+button{
     border: none;
 }
 .nav-buttons #b1::before {
