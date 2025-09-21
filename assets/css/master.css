@@ -316,7 +316,7 @@ span {
     font-size: 11px !important;
 }
 @media (min-width:1520px) {
-    .hero{
+    .Hero{
         min-height: 800px;
     }
 }
