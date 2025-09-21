@@ -315,7 +315,11 @@ span {
     margin-bottom: 0;
     font-size: 11px !important;
 }
-
+@media (min-width:1520px) {
+    .hero{
+        min-height: 800px;
+    }
+}
 @media (min-width:1111px) {
     .header-content {
         margin-top: 7%;
