@@ -931,11 +931,7 @@ li {
     place-items: center;
     place-self: center;
 }
-  @media (min-width: 768px) {
-    .contact p{
-        text-align: -webkit-center;
-      }
-  }
+ 
   @media (max-width: 767px) {
    
     .auto-cards-wrapper {
@@ -1066,6 +1062,13 @@ color: white !important;
     }
 
 }
+@media (max-width: 767px) {
+    .contact p{
+        text-align: -webkit-center;
+        color: white !important;
+        text-decoration: none !important;
+      }
+  }
 @media (max-width: 400px) {
     .contact p{
         font-size: 13px;
