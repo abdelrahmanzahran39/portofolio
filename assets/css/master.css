@@ -928,15 +928,16 @@ li {
     margin-bottom: 70px;
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .contact p{
-        text-align: -webkit-center;
+        text-align: -webkit-center !important;
+        text-align: center !important;
       }
   }
   @media (max-width: 767px) {
     .auto-card {
       flex: 0 0 30%; 
-      width: 100%;
+      width: 200px;
     }
     .auto-cards-wrapper {
         gap: 2%;
