@@ -928,16 +928,15 @@ li {
     margin-bottom: 70px;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .contact p{
-        text-align: -webkit-center !important;
-        text-align: center !important;
+        text-align: -webkit-center;
       }
   }
   @media (max-width: 767px) {
     .auto-card {
       flex: 0 0 30%; 
-      width: 200px;
+      width: 100%;
     }
     .auto-cards-wrapper {
         gap: 2%;
@@ -946,6 +945,21 @@ li {
         justify-self: center;
     margin-left: 0;
     }
+    .collaborations {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;    /* allow wrapping on small screens */
+        gap: 20px;          /* space between logos */
+      }
+      
+      .collaborations img {
+        max-width: 120px;   /* limit size */
+        width: 100%;        /* responsive scaling */
+        height: auto;       /* keep proportions */
+        object-fit: contain;
+        display: block;     /* removes inline extra space */
+      }
   }
 
 /***** contact******/
