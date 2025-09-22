@@ -958,7 +958,8 @@ li {
       
       .collaborations img {
         max-width: 250px;   /* limit size */
-        width: 100%;        /* responsive scaling */
+        width: 100%;    
+        scale: 0.8;
         height: auto;       /* keep proportions */
         object-fit: contain;
         display: block;     /* removes inline extra space */
