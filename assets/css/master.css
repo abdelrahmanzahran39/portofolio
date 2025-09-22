@@ -277,6 +277,7 @@ span {
 
 .social-links a {
     text-decoration: none;
+    opacity: 0.7;
 }
 
 .social-links i {
@@ -306,6 +307,7 @@ span {
     background: var(--primaryColor);
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    opacity: 1 !important;
 }
 
 .end {
@@ -322,12 +324,28 @@ span {
         min-height: 850px;
     }
 }
+
 @media (min-width:1400px){
     .header-content h1 {
         font-size: 45px;
+        padding-bottom: 20px;
     }
     .header-content p {
         font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .header-content .nav-buttons{
+        padding-bottom: 20px;
+    }
+    .end p{
+        font-size: 18px !important;
+        padding-bottom: 0;
+    }
+    .end {
+        padding-top: 70px;
+    }    
+    .header-content {
+        width: 50% !important;
     }
 }
 @media (max-width:1520px)  and (min-width:1280px){
@@ -420,6 +438,10 @@ span {
 
     .header-content p {
         font-size: 14px;
+    }
+    .header-container .social-links ,
+    .header-content .nav-buttons {
+        justify-content: center;
     }
 }
 
@@ -556,7 +578,7 @@ li {
 
 /**** services***/
 .services {
-    margin: 20px 30px;
+    margin: 70px 30px;
     padding: 20px;
 }
 
@@ -566,7 +588,9 @@ li {
     gap: 25px;
     margin-top: 20px;
 }
-
+.services h2{
+    margin-bottom: 40px;
+}
 .service-card {
     background: linear-gradient(7deg, rgba(27, 202, 255, 0.2) 0%, rgba(0, 0, 0, 0.66) 100% 100%);
     border: 1.5px solid rgba(255, 255, 255, 0.15);
@@ -629,14 +653,15 @@ li {
     background: linear-gradient(90deg, #01A7D9, #1BCAFF);
 }
 
-/****** services*****/
+/****** projects*****/
 .projects {
-    padding: 40px 20px;
+    padding: 70px 20px;
     background: #0d0d0d;
     color: #fff;
+    padding-bottom: 100px;
 }
 .projects h2{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 30px;
 }
 
@@ -854,11 +879,11 @@ li {
 
   /****** collabrations****/
 .collabrations {
-    padding: 40px 20px;
+    padding: 70px 20px;
     color: #fff;
 }
 .collabrations h2{
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     margin-left: 30px;
 }
   .auto-swiper {
@@ -874,22 +899,26 @@ li {
   }
   .auto-card {
     width: 120px;
-    margin-right: 80px;
+    margin: 40px;
     border-radius: 12px;
     flex-shrink: 0;
     object-fit: cover;
   }
-  .collabrations hr{
+  .contact p{
+    text-align: -webkit-center;
+  }
+  .contact hr{
     background-color: #003647;
     width: 50%;
     height: 1px;
     place-self: center;
-    margin-top: 60px;
+    justify-self: anchor-center;
     border:none
   }
-  .collabrations p{
+  .contact .center{
     justify-self: center;
     margin-top: 10px;
+    margin-bottom: 70px;
   }
 
   @media (max-width: 767px) {
@@ -908,6 +937,7 @@ li {
 /***** contact******/
 .contact {
     padding: 40px 20px;
+    padding-bottom: 0;
     color: #fff;
     /* background: url(../img/contact.png); */
     background-position: bottom;
@@ -915,11 +945,13 @@ li {
 }
 .contact-container{
     margin: 20px 30px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
 .contact-text h1, .contact-text p{
 margin-bottom: 20px;
+color: white !important;
 }
 .space img{
     width: 100%;
@@ -935,7 +967,7 @@ margin-bottom: 20px;
     min-width: 200px;
 }
 .contact input{
-    max-width: 230px;
+    /* max-width: 230px; */
     width: 50%;
 }
 .contact textarea{
@@ -959,7 +991,21 @@ margin-bottom: 20px;
 .contact .social-links{
     gap:15px;
 }
-
+@media (min-width:1350px){
+    .contact p{
+        font-size: 23px;
+    }
+    .social-links {
+        gap: 5px;
+    }
+     .social-links a{
+        font-size: 28px;
+    }
+   .social-links a i{
+        width: 55px;
+        height: 55px;
+    }
+}
 @media (max-width: 767px) {
     .contact-container{
         flex-direction: column;
