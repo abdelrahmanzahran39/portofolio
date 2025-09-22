@@ -937,10 +937,7 @@ li {
       }
   }
   @media (max-width: 767px) {
-    .auto-card {
-      flex: 0 0 30%; 
-      width: 100%;
-    }
+   
     .auto-cards-wrapper {
         gap: 2%;
     }
@@ -957,12 +954,16 @@ li {
       }
       
       .collaborations img {
-        max-width: 250px;   /* limit size */
-        width: 100%;    
+        max-width: 250px; 
         scale: 0.8;
+        width: 100%;        /* responsive scaling */
         height: auto;       /* keep proportions */
         object-fit: contain;
         display: block;     /* removes inline extra space */
+      }
+      .auto-card {
+        flex: 0 0 10%;
+        scale: 0.8;
       }
       
   }
