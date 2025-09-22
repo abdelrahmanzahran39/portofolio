@@ -277,7 +277,7 @@ span {
 
 .social-links a {
     text-decoration: none;
-    opacity: 0.7;
+    
 }
 
 .social-links i {
@@ -553,6 +553,9 @@ li {
     .about-head {
         justify-items: center;
     }
+    .about-content .nav-buttons {
+        justify-content: center;
+    }
 }
 
 @media (max-width:400px) {
@@ -648,7 +651,13 @@ li {
     text-decoration: none;
     transition: 0.3s;
 }
-
+.services .nav-buttons{
+    margin: 20px 0;
+}
+.services .nav-buttons a{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .service-card .btn:hover {
     background: linear-gradient(90deg, #01A7D9, #1BCAFF);
 }
@@ -904,9 +913,7 @@ li {
     flex-shrink: 0;
     object-fit: cover;
   }
-  .contact p{
-    text-align: -webkit-center;
-  }
+  
   .contact hr{
     background-color: #003647;
     width: 50%;
@@ -921,9 +928,15 @@ li {
     margin-bottom: 70px;
   }
 
+  @media (min-width: 768px) {
+    .contact p{
+        text-align: -webkit-center;
+      }
+  }
   @media (max-width: 767px) {
     .auto-card {
       flex: 0 0 30%; 
+      width: 100%;
     }
     .auto-cards-wrapper {
         gap: 2%;
@@ -958,6 +971,9 @@ color: white !important;
 }
 .contact form{
     width: 35vw;
+}
+.contact p{
+    text-decoration: none !important;
 }
 .contact .flex{
     margin:20px 0;
