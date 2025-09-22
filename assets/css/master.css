@@ -940,6 +940,7 @@ li {
    
     .auto-cards-wrapper {
         gap: 2%;
+        align-items: center; 
     }
     .collabrations h2{
         justify-self: center;
@@ -952,6 +953,11 @@ li {
         flex-wrap: wrap;    /* allow wrapping on small screens */
         gap: 20px;          /* space between logos */
       }
+      .auto-swiper{
+        overflow-x: auto;    /* بدل hidden خليه scrollable */
+  overflow-y: visible; /* عشان ميتقصش عمودي */
+  -webkit-overflow-scrolling: touch; /* دعم سوايب سلس للآيفون */
+      }
       
       .collaborations img {
         max-width: 250px; 
@@ -963,7 +969,10 @@ li {
       }
       .auto-card {
         flex: 0 0 10%;
-        scale: 0.8;
+        /* scale: 0.8; */
+        flex-shrink: 0;
+        object-fit: contain;   /* عشان الصورة تفضل كاملة */
+        overflow: visible;  
       }
       
   }
