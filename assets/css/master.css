@@ -927,7 +927,10 @@ li {
     margin-top: 10px;
     margin-bottom: 70px;
   }
-
+.centered{
+    place-items: center;
+    place-self: center;
+}
   @media (min-width: 768px) {
     .contact p{
         text-align: -webkit-center;
@@ -954,12 +957,13 @@ li {
       }
       
       .collaborations img {
-        max-width: 120px;   /* limit size */
+        max-width: 250px;   /* limit size */
         width: 100%;        /* responsive scaling */
         height: auto;       /* keep proportions */
         object-fit: contain;
         display: block;     /* removes inline extra space */
       }
+      
   }
 
 /***** contact******/
